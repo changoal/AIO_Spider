@@ -26,5 +26,5 @@ class ShuZiWeiBaSpider(scrapy.Spider):
             item['source'] = '数字尾巴'
             item['pub_time'] = data['created_at']
             item['desc'] = data['content']
-
+            item['channel'] = '文章'
             yield item
